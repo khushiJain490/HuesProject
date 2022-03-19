@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+    android:layout_marginLeft="28dp"
+    android:layout_width="79dp"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+   android:gravity="center_horizontal"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
@@ -11,7 +13,7 @@
         app:cardCornerRadius="50dp"
         app:cardBackgroundColor="@color/white"
         android:elevation="100dp"
-        android:layout_marginRight="26dp"
+        android:layout_gravity="center_horizontal"
         android:outlineSpotShadowColor="#005dff">
         <ImageView
             android:id="@+id/img_category"
@@ -21,12 +23,13 @@
     </androidx.cardview.widget.CardView>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="10sp"
         android:text="CATEGORY 1"
+        android:gravity="center_horizontal"
         android:layout_gravity="center_horizontal"
-        android:layout_marginRight="12dp"
+
         android:layout_marginTop="15dp"
         android:textColor="@color/black"/>
 

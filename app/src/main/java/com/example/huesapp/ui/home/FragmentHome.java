@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -64,8 +65,8 @@ public class FragmentHome extends Fragment {
 
         bestSellRecyclerView=binding.rvBestSell;
         productsAdapter = new ProductsAdapter(itemList2);
-        RecyclerView.LayoutManager mLayoutManger3 = new LinearLayoutManager(requireActivity(),LinearLayoutManager.HORIZONTAL, false);
-        bestSellRecyclerView.setLayoutManager(mLayoutManger3);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(requireActivity(),2);
+        bestSellRecyclerView.setLayoutManager(gridLayoutManager);
         bestSellRecyclerView.setItemAnimator(new DefaultItemAnimator());
         bestSellRecyclerView.setAdapter(productsAdapter);
         displayProductItem();

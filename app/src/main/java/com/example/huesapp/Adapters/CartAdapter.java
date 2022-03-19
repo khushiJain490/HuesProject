@@ -1,5 +1,6 @@
 package com.example.huesapp.Adapters;
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,11 +19,12 @@ import java.util.List;
 
 public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewModelHolder> {
     CartFragment fragment;
+    Context context;
     List<CartModelClass>cartList;
 
 
-    public CartAdapter(CartFragment fragment, List<CartModelClass> cartList) {
-        this.fragment = fragment;
+    public CartAdapter(Context context, List<CartModelClass> cartList) {
+        this.context = context;
         this.cartList = cartList;
     }
 

@@ -15,40 +15,80 @@
         android:paddingBottom="106dp"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:elevation="99dp"
+<!--        <LinearLayout-->
+<!--            android:elevation="99dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginTop="16dp">-->
+
+<!--            <ImageButton-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:src="@drawable/ic_baseline_menu_24"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginLeft="16dp"/>-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/logo"-->
+<!--                android:layout_width="114dp"-->
+<!--                android:layout_height="47dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:src="@drawable/logo"/>-->
+
+
+<!--            <ImageButton-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:src="@drawable/ic_baseline_search_24"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginRight="23dp"/>-->
+<!--        </LinearLayout>-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/cart_top"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="16dp">
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:elevation="99dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
 
             <ImageButton
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:background="@android:color/transparent"
-                android:src="@drawable/ic_baseline_menu_24"
-                android:layout_weight="1"
-                android:layout_marginTop="16dp"
-                android:layout_marginLeft="16dp"/>
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_baseline_menu_24"
+                            android:layout_weight="1"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginLeft="16dp"/>
 
-            <ImageView
-                android:id="@+id/logo"
-                android:layout_width="114dp"
-                android:layout_height="47dp"
-                android:layout_weight="1"
-                android:src="@drawable/logo"/>
+                        <ImageView
+                            android:layout_gravity="center_horizontal"
+                            android:id="@+id/logo"
+                            android:layout_width="114dp"
+                            android:layout_height="47dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/logo"/>
 
 
-            <ImageButton
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_alignParentRight="true"
-                android:layout_weight="1"
-                android:background="@android:color/transparent"
-                android:src="@drawable/ic_baseline_search_24"
-                android:layout_marginTop="16dp"
-                android:layout_marginRight="23dp"/>
-        </LinearLayout>
+                        <ImageButton
+                            android:layout_gravity="right"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic_baseline_search_24"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginRight="23dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
 
 <!--    <HorizontalScrollView-->
 <!--        android:layout_width="wrap_content"-->
@@ -76,7 +116,7 @@
         android:id="@+id/rv_category"
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_marginLeft="48dp"
+
         android:layout_marginTop="34dp"
         android:elevation="99dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
@@ -102,7 +142,7 @@
         android:id="@+id/rv_best_sell"
         android:layout_width="match_parent"
         android:orientation="horizontal"
-        android:layout_marginLeft="48dp"
+
         android:elevation="99dp"
         android:layout_marginTop="34dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"

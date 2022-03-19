@@ -83,7 +83,7 @@ public class CartFragment extends Fragment {
         final LinearLayoutManager layoutManager = new LinearLayoutManager(requireActivity());
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
-        cartAdapter=new CartAdapter(this,cartList);
+        cartAdapter=new CartAdapter(requireActivity(),cartList);
         cartAdapter.notifyDataSetChanged();
         recyclerView.setAdapter(cartAdapter);
 
