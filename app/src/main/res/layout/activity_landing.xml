@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:orientation="vertical"
+    android:background="#E5F3FF">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container_landing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_marginTop="24dp"
+        android:id="@+id/landing_tab"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@drawable/bg_tablayout">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/landing_tab_layout"
+        fontPath="fonts/Montserrat-Semibold.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed">
+
+        <com.google.android.material.tabs.TabItem
+            fontPath="fonts/Montserrat-Semibold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_home"
+            android:visibility="visible" />
+
+        <com.google.android.material.tabs.TabItem
+            fontPath="fonts/Montserrat-Semibold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_path_13"
+            android:visibility="visible" />
+
+        <com.google.android.material.tabs.TabItem
+
+            fontPath="fonts/Montserrat-Semibold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_user"
+            android:visibility="visible" />
+
+        <com.google.android.material.tabs.TabItem
+
+            fontPath="fonts/Montserrat-Semibold.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_settings"
+            android:visibility="visible" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

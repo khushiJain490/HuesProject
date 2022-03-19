@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/profile_gradient"
+    tools:context=".ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="140dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_chevron_left_black_24dp"
+            app:tint="@color/black"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="28dp"
+            android:background="@null" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="126dp"
+            android:layout_height="126dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            app:cardCornerRadius="99dp">
+
+      <ImageView
+          android:layout_width="126dp"
+          android:layout_height="126dp"
+          android:scaleType="centerCrop"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="146dp"
+            android:layout_height="37dp"
+            android:text="John Doe"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="19dp"
+            android:textSize="30sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="158dp"
+            android:layout_height="20dp"
+            android:text="johndoe@example.com"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:textSize="15sp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/editProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/profile"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/shippingOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/address"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/orderHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/history"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/notifications"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@+id/logOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logout"
+            android:background="@android:color/transparent"/>
+
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

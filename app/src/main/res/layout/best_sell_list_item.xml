@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="272dp"
+        android:background="@color/white"
+        app:cardCornerRadius="12dp">
+
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+        <ImageView
+            android:id="@+id/item_img"
+            android:layout_width="118dp"
+            android:layout_height="118dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="17dp"/>
+
+            <TextView
+                android:id="@+id/txt_prototype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_img"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="38dp"
+                android:text="PROTOTYPE"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_disc_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_prototype"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="23dp"
+                android:text="₹ 1,500"
+                android:textColor="#005dff"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txt_mrp"
+                android:layout_below="@+id/txt_disc_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:textSize="11dp"
+                android:text="@string/strike_text"
+                android:textColor="#989898" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
