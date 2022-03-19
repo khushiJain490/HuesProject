@@ -2,10 +2,11 @@ package com.example.huesapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-
+import android.os.Bundle;
 public class SplashScreen extends AppCompatActivity {
 
     @Override
@@ -22,5 +23,6 @@ public class SplashScreen extends AppCompatActivity {
 
             }
         },3000);
+
     }
 }
